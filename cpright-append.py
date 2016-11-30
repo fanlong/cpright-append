@@ -39,7 +39,7 @@ for root, dirs, files in os.walk(tdir):
         if ridx == -1:
             continue;
         ext = fname[ridx:].lower();
-        if ext != ".c" and ext != ".cpp" and ext != ".h" and ext != ".java":
+        if ext != ".c" and ext != ".cpp" and ext != ".h" and ext != ".py" and ext != ".java":
             continue;
         print "Append copyright header to " + root + "/" + fname;
         comment_token = "// ";
